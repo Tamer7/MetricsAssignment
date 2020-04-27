@@ -30,7 +30,6 @@ class Tester(unittest.TestCase):
             for result in range(10):
                 driver.get("https://en.wikipedia.org/wiki/Software_metric")
                 result = driver.execute_script("return window.performance.getEntries()")
-                print(result)
 
 
                 for current in result:
